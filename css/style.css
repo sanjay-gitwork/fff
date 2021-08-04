@@ -1173,6 +1173,12 @@ td>a:hover {
     color: #184D47;
 }
 
+.white-col{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .sum-data {
     /*font-family: "AvenirNextBold";*/
     font-family: "verdana";
@@ -4036,6 +4042,18 @@ a:hover {
     background-color: red;
     border-color: transparent;
     color: #fff;
+}
+
+@media screen and (min-width: 1800px) {
+    .login-left-page p{
+        
+    max-width: 598px;
+    /* max-width: 600px; */
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+    }
 }
 
 
