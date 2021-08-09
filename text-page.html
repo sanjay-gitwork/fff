@@ -12,11 +12,11 @@
    <body>
       <!--   main content goes from here  -->
       <div class="wrapper d-flex align-items-stretch">
-         <!--  Side Navigation  Desktop -->
+         <!--  Side Navigation  -->
          <nav id="sidebar" class="">
             <div class="custom-menu">
                <!-- <button type="button" id="sidebarCollapse" class="btn btn-primary float-right"> -->
-               <div type="" id="sidebarCollapse" >
+               <div type="button" id="sidebarCollapse" >
                   <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#184D47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
                      <line x1="3" y1="12" x2="21" y2="12"></line>
                      <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -43,7 +43,7 @@
                <li>
                   <a href="orders.html">
                      <span class="mr-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#184d47" stroke="#184D47" viewBox="0 0 29.212 25.961">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#184D47" viewBox="0 0 29.212 25.961">
                            <path class="a" d="M20.418,4.221,24.993,8.8a.5.5,0,0,1,0,.7L13.916,20.572l-4.706.522A.986.986,0,0,1,8.12,20L8.642,15.3,19.718,4.221A.5.5,0,0,1,20.418,4.221ZM28.634,3.06,26.159.585a1.984,1.984,0,0,0-2.8,0l-1.8,1.8a.5.5,0,0,0,0,.7l4.575,4.575a.5.5,0,0,0,.7,0l1.8-1.8a1.984,1.984,0,0,0,0-2.8Zm-9.159,14.5v5.163H3.246V6.494H14.9a.624.624,0,0,0,.431-.178L17.36,4.287a.609.609,0,0,0-.431-1.04H2.434A2.435,2.435,0,0,0,0,5.682V23.534a2.435,2.435,0,0,0,2.434,2.434H20.286a2.435,2.435,0,0,0,2.434-2.434v-8a.61.61,0,0,0-1.04-.431l-2.029,2.029A.624.624,0,0,0,19.475,17.56Z" transform="translate(0 -0.007)"/>
                         </svg>
                      </span>
@@ -134,7 +134,6 @@
          <!-- Page Content  -->
          <div id="content" class="">
             <!-- The form -->
-            <!-- Custom rounded search bars with input group -->
             <div class="topnav">
                <div class="header-logo center" >
                   <a href="index.html" title=""><img a src="images/adaanlogo.jpg" class="" alt="" style="height: 100%; width: 100%;"></a>
@@ -145,11 +144,12 @@
                   <line x1="3" y1="6" x2="21" y2="6"></line>
                   <line x1="3" y1="18" x2="21" y2="18"></line>
                </svg>
+               <a href=""><img class="back-button" src="feather/chevron-left.svg" alt=""></a>
             </div>
-            <div class="container-fluid main-content" >
-               <p class="main-text text-center">DASHBOARD</p>
+            <div class="container-fluid main-content"  >
+               <p class="main-text text-center">AMENDS</p>
                <div class="row">
-                  <div class="col-md-6 col-lg-6 top-search-box mt-3">
+                  <div class="col-md-6 top-search-box mt-3">
                      <form action="">
                         <div class="p-1 bg-light search-box shadow-sm mb-4">
                            <div class="input-group ">
@@ -166,9 +166,9 @@
                         </div>
                      </form>
                   </div>
-                  <div class="col-md-6 col-lg-6 profile-box mt-3">
+                  <div class="col-md-6 profile-box mt-3">
                      <div class="d-flex flex-row profile ">
-                        <button class="btn print-text  " type="button"onclick="window.print()">
+                        <button class="btn print-text  " type="button" onclick="window.print()">
                            Print <span class="screen">Screen</span> 
                            <svg class="ml-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#184D47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-printer">
                               <polyline points="6 9 6 2 18 2 18 9"></polyline>
@@ -235,159 +235,258 @@
                   </div>
                </div>
                <!-- row close  -->
-               <!-- Progress bar  -->
-               <div class="top" >
-                  <div class="row" >
-                     <div class="col-md col-sm- first-pb box-shadow-top small-box">
-                        <p class="first-pb-text">Today's YP Tasks</p>
-                        <div class="progress blue">
-                           <span class="progress-left">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <span class="progress-right">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <div class="progress-value">53/100</div>
-                        </div>
+               <div class="cointainer">
+                  <div class="row">
+                     <div class="col-md-12" id="business-sum">
+                        <nav aria-label="breadcrumb ">
+                           <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Amends</a></li>
+                              <li class="breadcrumb-item"><a href="#">Business name <span> and MID</span> </a></li>
+                           </ol>
+                        </nav>
                      </div>
-                     <div  class="col-md-6 col-sm- first-pb box-shadow-top progress-overview">
-                        <p class="first-pb-text"> YP Overview</p>
-                        <div>
-                           <div class="progress-main ">
-                              <p class="progress-text">Active Task</p>
-                              <div class="progress1">
-                                 <div class="progress-value1"></div>
-                                 <span class="completion-percentage">70</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text">On Time</p>
-                              <div class="progress1">
-                                 <div class="progress-value2"></div>
-                                 <span class="completion-percentage">60</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text">Running Late</p>
-                              <div class="progress1">
-                                 <div class="progress-value3"></div>
-                                 <span class="completion-percentage">30</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text" style="">Total Tasks</p>
-                              <div class="progress1" >
-                                 <div class="progress-value4"></div>
-                                 <span class="completion-percentage">100</span>
-                              </div>
-                           </div>
-                        </div>
+                     <div class="col back-prev" >
+                        <p  class="comment-nav back">&ensp;  <span style="color: #184D47;" class="bottom-nav sum-data"><a href="completed.html" title="">
+                           <img class="mr-1" src="feather/arrow-left.svg" alt="">
+                           Back To Details</a> </span>
+                        </p>
                      </div>
-                     <div  class="col-md col-sm-  box-shadow-top small-box-2" >
-                        <p class="first-pb-text">Queries Resolved</p>
-                        <div class="progress yellow">
-                           <span class="progress-left yellow">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <span class="progress-right">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <div class="progress-value">60/100</div>
-                        </div>
+                     <div class="col back-prev " >
+                        <p class="comment-nav float-right"> <span class=" sum-data"><u>Preview Links</u></span></p>
                      </div>
                   </div>
                </div>
-              <div style="margin-top: 20px;" class="">
+               <div class="container-fluid comment-box-container">
                   <div class="row">
-                     <div class="col-md col-sm- first-pb">
-                        <span class="index3-table-head">Due Today (20)</span> 
-                        <span class="index3-viewall"><a href="orders.html" title=""><u>View all</u> </a></span> 
-                        <table class="table table-borderless index3-table">
-                           <thead>
-                              <tr>
-                                 <th class="index3-th" scope="col">MID</th>
-                                 <th class="index3-th" scope="col">Status</th>
-                                 <th class="index3-th" scope="col">Assigned To</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>356550</td>
-                                 <td>Content QA</td>
-                                 <td>Resham</td>
-                              </tr>
-                              <tr>
-                                 <td>356550</td>
-                                 <td>Design</td>
-                                 <td>Spriha</td>
-                              </tr>
-                              <tr>
-                                 <td>356550</td>
-                                 <td>On Page SEO</td>
-                                 <td>Saifi</td>
-                              </tr>
-                           </tbody>
-                        </table>
+                     <div class="col-md- col-sm-12 col-lg-5 col-xl-5 comment-section">
+                        <div class="overflow-auto comment-height" style="background-color: white;">
+                           <div class="col-md-12 comment-msg" >
+                              <ul>
+                                 <li class="user">Spriha : </li>
+                                 <li class="text-msg"> On time and on point work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="user">Spriha : </li>
+                                 <li class="text-msg"> On time and on point work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg" >
+                              <ul>
+                                 <li class="user">Spriha : </li>
+                                 <li class="text-msg"> On time and on point work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg" >
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-12 comment-msg">
+                              <ul>
+                                 <li class="to-team">To Design :</li>
+                                 <li class="user">Rajeev : </li>
+                                 <li class="text-msg"> Great work!!</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="comment-form">
+                           <form action="" method="#" >
+                              <div  class="list-group list-group-horizontal form-group" >
+                                 <!-- custom select tag -->
+                                 <div class="selectdiv ">
+                                    <label>
+                                       <select>
+                                          <option selected>To The Team </option>
+                                          <option>Option 1</option>
+                                          <option>Option 2</option>
+                                          <option>Last long</option>
+                                       </select>
+                                       <svg class="select-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                                          <polyline points="6 9 12 15 18 9"></polyline>
+                                       </svg>
+                                    </label>
+                                 </div>
+                                 <textarea style="" placeholder="Add a comment" name=""></textarea>
+                                 <!-- <img style="background-color: #1AA2E5; color: white;" src="images/dm.png" alt=""> -->
+                                 <button class="submit-btn" type="submit" value="submit" class="btn btn-default"><i  class="fa fa-paper-plane send-icon"></i></button>
+                              </div>
+                           </form>
+                        </div>
                      </div>
-                     <div class="col-md col-sm- first-pb">
-                        <span class="index3-table-head">Running Late (3)</span> 
-                        <span class="index3-viewall"><a href="orders.html" title=""><u>View all</u> </a></span> 
-                        <table class="table table-borderless index3-table">
-                           <thead>
-                              <tr>
-                                 <th class="index3-th"  scope="col">MID</th>
-                                 <th class="index3-th" scope="col">Status</th>
-                                 <th class="index3-th" scope="col">Assigned To</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>Mark</td>
-                                 <td>Otto</td>
-                                 <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                 <td>Jacob</td>
-                                 <td>Thornton</td>
-                                 <td>@fat</td>
-                              </tr>
-                              <tr>
-                                 <td>Jacob</td>
-                                 <td>Thornton</td>
-                                 <td>@fat</td>
-                              </tr>
-                           </tbody>
-                        </table>
+
+<!--                      <nav class="nav nav-pills flex-column flex-sm-row">
+  <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Active</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Longer nav link</a>
+  <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
+  <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+</nav> -->
+
+<!--Basic Bootstrap Tab start -->
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item col-"><a class="nav-link active" href="#bootstrap-home" aria-controls="home" role="tab" data-toggle="tab">Default</a></li>
+    <li class="nav-item col-"><a class="nav-link" href="#bootstrap-about" aria-controls="about" role="tab" data-toggle="tab">Fixed</a></li>
+    
+</ul>
+
+<div class="card pmd-card">
+    <div class="card-body">
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tablist" aria-labelledby="home-tab" class="tab-pane fade show active" id="bootstrap-home">A tab provides the affordance for displaying grouped content. A tab label succinctly describes the tab’s associated grouping of content.</div>
+            <div role="tablist" aria-labelledby="home-tab" class="tab-pane fade" id="bootstrap-about">Fixed tabs have equal width, calculated either as the view width divided by the number of tabs, or based on the widest tab label. To navigate between fixed tabs, touch the tab or swipe the content area left or right.</div>
+            
+        </div>
+    </div>
+</div>
+
+                     <!--   mobile preview  -->
+                     <div class="col mobile-prev" >
+                        <p class="comment-nav float-right"> <span class=" sum-data-mobile"><a href="#second"> <u>Preview Links</u></a></span></p>
                      </div>
-                     <div  class="col-md col-sm- first-pb">
-                        <span class="index3-table-head">Received Today</span> 
-                        <span class="index3-viewall "><a href="orders.html" title=""><u>View all</u> </a></span> 
-                        <table class="table table-borderless index3-table">
-                           <thead>
-                              <tr>
-                                 <th class="index3-th" scope="col">MID</th>
-                                 <th class="index3-th" scope="col">Status</th>
-                                 <th class="index3-th" scope="col">Assigned To</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td>Mark</td>
-                                 <td>Otto</td>
-                                 <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                 <td>Jacob</td>
-                                 <td>Thornton</td>
-                                 <td>@fat</td>
-                              </tr>
-                              <tr>
-                                 <td>Jacob</td>
-                                 <td>Thornton</td>
-                                 <td>@fat</td>
-                              </tr>
-                           </tbody>
-                        </table>
+                     <div class="col comment-page-details" class="overflow-auto" >
+                        <div class="comment-box-summary">
+                           <div class=" project-sum"  >
+                              <div class="row">
+                                 <ul class="col-md-6 " >
+                                    <li class="comment-project-sum" ><span class="project-name">Project Name &ensp; </span>:<span class="sum-data">&ensp; Voice Page</span></li>
+                                    <li class="comment-project-sum"><span class="project-type">Project Type &ensp; </span> : <span class="sum-data"> &ensp; WEBE</span></li>
+                                    <li class="comment-project-sum"><span class="sum-data">MCET link</span></li>
+                                 </ul>
+                                 <ul class="col-md-6">
+                                    <li class="comment-project-sum"><span style="margin-right: 32px;">MID &ensp; </span>:<span class="sum-data">&ensp; 1234567</span></li>
+                                    <li class="comment-project-sum"><span>Language  &ensp; </span> : <span class="sum-data"> &ensp; English</span></li>
+                                    <li class="comment-project-sum"><span class="status">Status </span> : <span class="sum-data" style="color: #17A651"> &ensp; Complete</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class=" project-sum mt-3" id="second">
+                              <div class="row">
+                                 <ul class="col-md-6" >
+                                      <li class="" ><span class="comment-project-sum">Total Time Taken &ensp; </span>:<span class="sum-data">&ensp; 10 Days</span></li>
+                                    <li class="comment-project-sum"><span class="">Total Time Taken &ensp; </span> : <span class="sum-data"> &ensp; 10 Days</span></li>
+                                    <li class="comment-project-sum"><span class="received-date">Received Date &ensp; </span> : <span class="sum-data"> &ensp; 11/05/2021</span></li>
+                                    <li class="comment-project-sum"><span class="due-date">Due Date &ensp; </span> : <span class="sum-data"> &ensp; 11/05/2021</span></li>
+                                 </ul>
+                                 <ul class="col-md-6" >
+                                    <li class="comment-project-sum"><span style="margin-right: 8px;">Within Sla &ensp; </span>: <span class="sum-data" style="color: #F8333C">&ensp; No.(2)</span></li>
+                                    <li class="comment-project-sum"><span class="started-on">Started On  &ensp; </span> : <span class="sum-data"> &ensp; 13/04/20</span></li>
+                                    <li class="comment-project-sum"><span style="margin-right: 22px;">End Date </span> : <span class="sum-data"> &ensp; 20/04/20</span></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <!--  second project detail box -->
+                           <div class="container scroll-project-box mt-4">
+                              <div class="row flex-row all-box flex-nowrap">
+                                 <div class="col-">
+                                    <div class="well ">
+                                       <p class="scroll-project-detail">Project Details</p>
+                                       <ul class="col-md-6 " >
+                                          <li class="comment-project-sum" ><span class="" style="margin-right: 20px;">Project Name &ensp; </span>:<span class="sum-data margin-left-comment">&ensp; Voice Page</span></li>
+                                          <li class="comment-project-sum"><span class="project-type" style="margin-right: 28px">Project Type &ensp; </span> : <span class="sum-data" style="margin-left: 17px;"> &ensp; WEBE</span></li>
+                                          <li class="comment-project-sum"><span class="sum-data" style="text-decoration: underline;">MCET link</span></li>
+                                       </ul>
+                                       <ul class="col-md-6">
+                                          <li class="comment-project-sum"><span style="margin-right: 77px;">MID &ensp; </span>:<span class="sum-data margin-left-comment">&ensp; 1234567</span></li>
+                                          <li class="comment-project-sum"><span style="margin-right: 42px;">Language  &ensp; </span> : <span class="sum-data margin-left-comment"> &ensp; English</span></li>
+                                          <li class="comment-project-sum"><span style="margin-right: 75px;">Status </span> : <span class="sum-data margin-left-comment" style="color: #17A651;"> &ensp; Complete</span></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="col-">
+                                    <div class="well margin-box">
+                                       <p class="scroll-project-detail">Project Details</p>
+                                       <ul class="col-md-6" >
+                                          <li class="comment-project-sum" ><span class="" style="margin-right: 18px;"> Total Time Taken &ensp; </span>:<span class="sum-data margin-left-comment" >&ensp; 10 Days</span></li>
+                                          <li class="comment-project-sum"><span class="project-type" style="margin-right: 28px">Received Time &ensp; </span> : <span class="sum-data" style="margin-left: 17px;"> &ensp; 11/05/2021</span></li>
+                                          <li class="comment-project-sum"><span class="due-date" style="margin-right: 58px;">Due Date &ensp; </span> : <span class="sum-data margin-left-comment"> &ensp; 11/05/2021</span></li>
+                                       </ul>
+                                       <ul class="col-md-6" >
+                                          <li class="comment-project-sum"><span style="margin-right: 55px;">Within Sla &ensp; </span>: <span class="sum-data margin-left-comment" style="color: #F8333C; ">&ensp; No.(2)</span></li>
+                                          <li class="comment-project-sum"><span class="started-on" style="margin-right: 50px;">Started On  &ensp; </span> : <span class="sum-data margin-left-comment"> &ensp; 13/04/20</span></li>
+                                          <li class="comment-project-sum"><span style="margin-right: 69px;">End Date </span> : <span class="sum-data margin-left-comment"> &ensp; 20/04/20</span></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div>
+                           <img  class="comment-img img-center" src="images/company.png" alt="">
+                        </div>
                      </div>
                   </div>
                </div>

@@ -766,7 +766,7 @@ td>a:hover {
 .dash-table {
     font-family: 'verdana';
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     width: 200px;
 }
 
@@ -1005,12 +1005,12 @@ td>a:hover {
     /*padding-right: 100px;*/
     margin-top: -33px;
 }
-
+/*
 .progress-main {
-    /*background-color: pink;*/
+ 
     padding-top: 12px;
 }
-
+*/
 .progress-value1 {
     animation: load 3s normal forwards;
     /*box-shadow: 0 10px 40px -10px #fff;*/
@@ -1077,6 +1077,7 @@ td>a:hover {
 .comment-nav {
     color: #184D47;
     margin-right: 20px;
+    margin-left: -11px;
     /* font-family: "Avenir";*/
 }
 
@@ -1739,6 +1740,8 @@ input:focus {
     font-family: "verdana";
     margin-left: 10px;
     color: #184D47;
+    font-size: 13px;
+    /*font-size: 14px;*/
 }
 
 
@@ -1898,9 +1901,51 @@ ________________________________________________
 
 @media (min-width:320px) and (max-width: 479px) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    
+/*
+        index.html*/
+    .order-data {
+        font-family: "verdana";
+        margin-left: 10px;
+        color: #184D47;
+        font-size: 14px;
+    }
+
+    .zui-table tbody td {
+        padding: 10px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .progress-text {
+        margin-bottom: -20px;
+        font-size: 14px;
+        font-family: "verdana";
+        color: #184D47;
+    }
+
+    .small-box-2 {
+        height: 200px;
+        width: 153px;
+        background-color: white;
+        margin-left: 187px;
+        margin-top: -462px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        margin-right: 25px;
+    }
+
+
+    .progress-main{
+        margin-top: 2px;
+    }
+
     .topnav {
         box-shadow: 0 -9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
     .mobile-menu {
         margin-top: -32px;
         float: right;
@@ -1987,18 +2032,7 @@ ________________________________________________
         height: 200px;
         width: 153px;
     }
-    .small-box-2 {
-        height: 200px;
-        width: 153px;
-        background-color: white;
-        margin-left: 187px;
-        margin-top: -488px;
-        padding-left: 20px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-        padding-right: 20px;
-        margin-right: 25px;
-    }
+
     .progress {
         height: 115px;
         width: 115px;
@@ -2013,7 +2047,7 @@ ________________________________________________
         border-collapse: separate;
         border-spacing: 0;
         font-family: "verdana";
-        font-size: 13px;
+        font-size: 14px;
     }
     .zui-wrapper {
         position: relative;
@@ -2038,7 +2072,7 @@ ________________________________________________
         padding-right: 0px;
     }
     /*    ------------------------------------
-        orders2.html
+        orders.html
     ------------------------------------*/
     .sort {
         float: right;
@@ -2056,7 +2090,7 @@ ________________________________________________
     }
     .filter-button>a>span {
         font-family: "verdana";
-        font-size: 13px;
+        font-size: 14px;
         color: #184D47;
         font-weight: bold;
     }
@@ -2240,10 +2274,10 @@ ________________________________________________
         
         font-family: "AvenirNext-Regular";
         color: #184D47;
-        font-size: 13px;
+        font-size: 14px;
     }
     .breadcrumb li a {
-        font-size: 12px;
+        font-size: 14px;
         color: #184D47;
     }
     #business-sum {
@@ -2290,6 +2324,7 @@ ________________________________________________
     }
     .all-box {
         overflow-x: scroll;
+        margin-left: -2px;
     }
     .margin-box {
         margin-left: 15px;
@@ -2299,14 +2334,15 @@ ________________________________________________
     }
     .well {
         min-height: 250px;
-        width: 300px;
+        /*width: 300px;*/
+        width: 318px;
         background-color: white;
     }
     .well>ul>li {
         color: #184D47;
         list-style-type: none;
         font-family: "AvenirNext-Medium";
-        font-size: 13px;
+        font-size: 14px;
     }
     .well>ul {
         padding-left: 20px;
@@ -2377,6 +2413,12 @@ ________________________________________________
 /* On screens between 360px and 470px */
 
 @media (min-width: 480px) and (max-width: 575px) {
+    
+    .progress-main {
+    /*background-color: pink;*/
+    padding-top: 2px;
+}
+
     .topnav {
         box-shadow: 0 -9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
@@ -2495,7 +2537,7 @@ ________________________________________________
         width: 230px;
         background-color: white;
         margin-left: 255px;
-        margin-top: -488px;
+        margin-top: -445px;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -2662,7 +2704,7 @@ ________________________________________________
     }
     .login,
     .image {
-        display: none;
+       
     }
     .form-data {
         margin-top: -10px;
@@ -2670,10 +2712,7 @@ ________________________________________________
     .input-data-group {
         margin-top: 14px;
     }
-    .login,
-    .image {
-        min-height: 0vh;
-    }
+ 
     #bottom {
         display: none;
     }
@@ -2814,6 +2853,11 @@ ________________________________________________
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+
+    .progress-main {
+    /*background-color: pink;*/
+    padding-top: 12px;
+}
     .topnav {
         box-shadow: 0 -9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         width: 100%;
@@ -3222,7 +3266,7 @@ ________________________________________________
 
 .login, .image {
     /* min-height: 100%; */
-    min-height: 70vh;
+   /* min-height: 70vh;*/
 }
 
     .login-logo {
@@ -3252,7 +3296,7 @@ ________________________________________________
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-top: -311px;
+    margin-top: -351px;
 }
 
 .login-left-page p {
@@ -3261,7 +3305,7 @@ ________________________________________________
     color: #184D47;
     padding-bottom: 30px;
     text-align: center;
-    margin-top: 210px;
+    margin-top: 258px;
     line-height: 21px;
     }
 
@@ -3309,6 +3353,11 @@ ________________________________________________
 
 
 @media (min-width: 768px) and (max-width: 991px){
+
+    .progress-main {
+    /*background-color: pink;*/
+    padding-top: 12px;
+}
 
 /*    .white-col{
     padding-top: 250px;
@@ -3423,6 +3472,11 @@ ________________________________________________
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
+    .progress-main {
+    /*background-color: pink;*/
+    padding-top: 12px;
+}
+
 /*    .white-col{
     padding-top: 250px;
   }
@@ -3433,6 +3487,7 @@ ________________________________________________
 
 .breadcrumb{
     padding-right: 0px;
+    padding-left: 0px;
 }
     .topnav {
         display: none;
@@ -3598,6 +3653,25 @@ ________________________________________________
 */
 }
 @media (min-width: 1201px) and (max-width: 1800px) {
+
+            #sidebar ul.components {
+    padding: 27px;
+    /* padding: 0px 27px; */
+    margin-top: 15px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+}
+    .progress-main {
+    /*background-color: pink;*/
+    padding-top: 12px;
+}
     /*  .topnav{
     display: none;
   }*/
@@ -3637,7 +3711,7 @@ ________________________________________________
         margin-top: 40px;
     }
     .breadcrumb {
-        margin-left: -50px;
+        margin-left: -59px;
     }
     .comment-height {
         height: 500px;
@@ -3677,6 +3751,13 @@ ________________________________________________
 }
 
 @media (min-width: 1390px) {
+
+
+
+    .progress-main {
+    /*background-color: pink;*/
+    padding-top: 12px;
+}
 
     .action-btn {
         width: 100%;
@@ -3723,6 +3804,20 @@ ________________________________________________
 @media screen and (min-width: 1400px) {
 
 
+
+
+    .img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100%;
+}
+    
+    .extra-lg{
+        max-width: 25%;
+    }
+
     .error{
         display: block;
         margin-right: auto;
@@ -3739,7 +3834,7 @@ ________________________________________________
         display: none;
     }
     .comment-height {
-        height: 460px;
+        height: 748px;
         padding-right: 15px;
         padding-left: 15px;
         padding-top: 15px;
@@ -3829,6 +3924,7 @@ ________________________________________________
     height: 40px;
     width: 120px;
     background-color: #1AA2E5;
+    border-radius: 5px 0px 0px 5px;
 }
 .selectdiv:after {
     right: 11px;
@@ -4054,6 +4150,23 @@ a:hover {
     margin-left: auto;
 
     }
+
+        #sidebar ul.components {
+    padding: 27px;
+    /* padding: 0px 27px; */
+    margin-top: 25px;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+
+
 }
 
 
