@@ -1537,6 +1537,7 @@ td>a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: "AvenirNext-DemiBold";
     font-size: 14px;
+    border-radius: 10px;
 }
 
 .logout-btn a {
@@ -1549,6 +1550,8 @@ td>a:hover {
   padding-left: 20px;*/
     font-family: "AvenirNext-DemiBold";
     font-size: 14px;
+    border-radius: 10px;
+
 }
 
 .comment-img {
@@ -2143,7 +2146,7 @@ ________________________________________________
         display: block;
         margin-right: auto;
         margin-left: auto;
-        margin-top: -333px;
+        margin-top: -373px;
     }
     .login-logo {
         display: block;
@@ -2184,7 +2187,7 @@ ________________________________________________
     }
     .login-page {
         background-color: #1AA2E5;
-        margin-top: 150px;
+        margin-top: 250px;
         /* height: 432px;*/
         
         height: 100%;
@@ -2192,12 +2195,12 @@ ________________________________________________
         margin-left: 20px;
     }
     .login {
-        margin-top: -35px;
+        margin-top: -219px;
         margin-bottom: -40px;
     }
     .login,
     .image {
-        display: none;
+        
     }
     .form-data {
         margin-top: -10px;
@@ -2207,7 +2210,7 @@ ________________________________________________
     }
     .login,
     .image {
-        min-height: 0vh;
+       /* min-height: 0vh;*/
     }
 
     #bottom {
@@ -2229,11 +2232,11 @@ ________________________________________________
     .logout-cancel {
         /*margin-left: 20px;*/
         
-        width: 55px;
+        width: 100px;
         border-radius: 10px;
     }
     .logout-btn {
-        width: 60px;
+        width: 100px;
         padding-left: 0px;
         padding-right: 0px;
         border-radius: 10px;
@@ -2426,7 +2429,7 @@ ________________________________________________
     .nocomment {
     margin-top: 77px;
     font-size: 13px;
-}
+    }
     .topnav {
         width: 100%;
     }
@@ -2530,13 +2533,13 @@ ________________________________________________
     }
     .small-box {
         height: 200px;
-        width: 205px;
+        width: 250px;
     }
     .small-box-2 {
         height: 200px;
-        width: 230px;
+        width: 250px;
         background-color: white;
-        margin-left: 255px;
+        margin-left: 298px;
         margin-top: -445px;
         padding-left: 20px;
         padding-bottom: 20px;
@@ -2593,7 +2596,21 @@ ________________________________________________
     .order-data {
         margin-left: 10px;
         color: #184D47;
+        font-size: 14px;
     }
+
+   .zui-table tbody td {
+    padding: 10px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.progress-text {
+    margin-bottom: -20px;
+    font-size: 14px;
+    font-family: "verdana";
+    color: #184D47;
+}
     .center {
         display: block;
         margin-right: auto;
@@ -2605,11 +2622,11 @@ ________________________________________________
     .logout-cancel {
         /*margin-left: 20px;*/
         
-        width: 55px;
+        width: 100px;
         border-radius: 10px;
     }
     .logout-btn {
-        width: 65px;
+        width: 100px;
         padding-left: 0px;
         padding-right: 0px;
         border-radius: 10px;
@@ -2652,13 +2669,13 @@ ________________________________________________
     }
     .login-screen-img {
         height: 100%;
-        width: 43%;
+        width: 39%;
        /* height: 160px;
         width: 178px;*/
         display: block;
         margin-right: auto;
         margin-left: auto;
-        margin-top: -311px;
+        margin-top: -319px;
     }
     .login-logo {
         display: block;
@@ -2699,7 +2716,7 @@ ________________________________________________
         margin-left: 20px;
     }
     .login {
-        margin-top: -35px;
+        margin-top: -185px;
         margin-bottom: -40px;
     }
     .login,
@@ -2990,11 +3007,11 @@ ________________________________________________
     }
     .small-box {
         height: 200px;
-        width: 50%;
+        width: 320px;
     }
 .small-box-2 {
     height: 200px;
-    width: 50%;
+    width: 320px;
     background-color: white;
     margin-left: 360px;
     margin-top: -488px;
