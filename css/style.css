@@ -1475,12 +1475,20 @@ td>a:hover {
     margin-left: auto;
     margin-right: auto;
     /*width: 50%;*/
-    width: 70%;
+    /*width: 70%;*/
+    width: 92%;
     /*width: 30%;*/
     padding-right: 20px;
     padding-left: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.logout-img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
 }
 
 .model-header-text {
@@ -2229,7 +2237,7 @@ ________________________________________________
         margin-left: auto;
         padding-right: 20px;
         padding-left: 20px;
-        width: 83%;
+        width: 92%;
     }
     .nocomment {
         margin-top: 77px;
@@ -2238,11 +2246,11 @@ ________________________________________________
     .logout-cancel {
         /*margin-left: 20px;*/
         
-        width: 100px;
+        width: 85px;
         border-radius: 10px;
     }
     .logout-btn {
-        width: 100px;
+        width: 90px;
         padding-left: 0px;
         padding-right: 0px;
         border-radius: 10px;
@@ -2623,16 +2631,17 @@ ________________________________________________
         margin-left: auto;
         padding-right: 20px;
         padding-left: 20px;
-        /*    width: 83%;*/
+            /*width: 83%;*/
+            width: 90%;
     }
     .logout-cancel {
         /*margin-left: 20px;*/
         
-        width: 100px;
+        width: 85px;
         border-radius: 10px;
     }
     .logout-btn {
-        width: 100px;
+        width: 90px;
         padding-left: 0px;
         padding-right: 0px;
         border-radius: 10px;
@@ -3095,7 +3104,8 @@ ________________________________________________
         margin-left: auto;
         padding-right: 20px;
         padding-left: 20px;
-            width: 83%;
+            /*width: 83%;*/
+        width: 92%;
     }
     .logout-cancel {
         /*margin-left: 20px;*/
@@ -3112,6 +3122,10 @@ ________________________________________________
     .logout-img {
         /*margin-right: 10px;
     margin-left: 10px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 87%;
     }
     /*  ------------------------------------
               account.html page
@@ -3795,7 +3809,8 @@ ________________________________________________
         margin-right: auto;
         /*width: 50%;*/
         
-        width: 79%;
+       /* width: 79%;*/
+       width: 82%;
         /*width: 30%;*/
         
         padding-right: 20px;
