@@ -2110,6 +2110,12 @@ ________________________________________________
         padding: 2px 9px;
         text-decoration: none;
     }
+
+ /*   order-summary*/
+        .due-today > tbody> tr> td{
+            font-size: 14px;
+            font-family: "AvenirNext-Regular";
+        }
     /*  ------------------------------------
               account.html page
       -------------------------------------------------
