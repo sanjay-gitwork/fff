@@ -1,1 +1,2 @@
 $('input[name="dates"]').daterangepicker();
+

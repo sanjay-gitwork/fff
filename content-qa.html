@@ -8,6 +8,36 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/style.css">
+
+
+               <!--   Data tables css -->
+   <!--  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css">
+   <!--  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"> -->
+   <!--  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="datatables.net-bs/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.1.0/css/dataTables.dateTime.min.css">
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>   
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+        <!-- Datatable Javascript files  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js
+    "></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.1.0/js/dataTables.dateTime.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+
+
    </head>
    <body>
       <div class="wrapper d-flex align-items-stretch">
@@ -351,109 +381,121 @@
                   </div>
                </div>
             </div>
-            <div class="zui-wrapper " style="margin-top: 25px;">
-               <div class="zui-scroller ">
-                  <table class="zui-table table ">
-                     <thead>
+       
+
+
+<div class="" style="clear: both; margin-top: 18px;  margin-right: 3px;">
+
+
+
+    <table id="dt-content-qa-table" class="display table dt-responsive nowrap" style="width:100%;" cellspacing="0">
+        <thead class="dt-thead">
+            <tr>
+                <th class="dt-home-table-head">Sub Tasks</th>
+                <th class="dt-home-table-head">Assigned To</th>
+                <th class="dt-home-table-head">Start Date</th>
+                <th class="dt-home-table-head">Complexity</th>
+                <th class="dt-home-table-head">End Date</th>
+                <th class="dt-home-table-head">Wrike Link</th>
+                <th class="dt-home-table-head">Approval History</th>
+                <th class="dt-home-table-head">Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="orders.html">Meta Data</a> </td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+               <td>2011/04/25</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Meta Data QA</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+               <td>2011/04/25</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+            <tr id="content-qa">
+                <td>Content</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>2011/04/25</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+            <tr >
+                <td>Content QA</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>2011/04/25</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Design</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>2011/04/25</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+
+
+
+            <tr >
+                <td>Design QA</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>2011/04/25</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+
                         <tr>
-                           <th onclick="sortTable(0)" class="dash-table table-head zui-sticky-col ml-2" scope="col">Sub Tasks</th>
-                           <th class="dash-table table-head" scope="col">Assigned To</th>
-                           <th class="dash-table table-head" scope="col">Start Date </th>
-                           <th class="dash-table table-head" scope="col">Complexity</th>
-                           <th class="dash-table table-head" scope="col">End Date</th>
-                           <th class="dash-table table-head" scope="col">Wrike Link</th>
-                           <th class="dash-table tab;e-head" scope="col">Approval History</th>
-                           <th class="dash-table table-head" scope="col">Comments</th>
-                        </tr>
-                     </thead>
-                     <tbody >
-                        <tr style="margin-left: 20px" >
-                           <a href="">
-                              <td class="index-table-data zui-sticky-col">
-                           <a  class="order-data" href="orders.html">Meta Data</a> </td>
-                           <td>Dummy</td>
-                           <td>123456</td>
-                           <td>Medium</td>
-                           <td>02/05/2020</td>
-                           <td class="link-hover"><a href=""><u>Link</u></a></td>
-                           <td class="link-hover"><a href="">View Details</a></td>
-                           <td class="link-hover"><a href="">No Comments</a></td>
-                           </a>
-                        </tr>
+                <td>Alt</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>2011/04/25</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+
                         <tr>
-                           <td class="index-table-data zui-sticky-col " ><a class="order-data" href="orders.html" title="">Meta Data QA</a> </td>
-                           <td>Dummy</td>
-                           <td>123456</td>
-                           <td>Medium</td>
-                           <td>02/05/2020</td>
-                           <td class="link-hover"><a href=""><u>Link</u></a></td>
-                           <td class="link-hover"><a href="">View Details</a></td>
-                           <td class="link-hover"><a href="">No Comments</a></td>
-                        </tr>
-                        <tr>
-                           <td class="index-table-data zui-sticky-col"><a  class="order-data" href="orders.html" title="">Content</a> </td>
-                           <td>Dummy</td>
-                           <td>123456</td>
-                           <td>Medium</td>
-                           <td>02/05/2020</td>
-                           <td class="link-hover"><a href=""><u>Link</u></a></td>
-                           <td class="link-hover"><a href="">View Details</a></td>
-                           <td class="link-hover"><a href="">No Comments</a></td>
-                        </tr>
-                        <tr id="content-qa" >
-                           <td class="index-table-data zui-sticky-col"><a class="order-data" href="orders.html" title="">Content QA</a></td>
-                           <td>Dummy</td>
-                           <td>123456</td>
-                           <td>Medium</td>
-                           <td>02/05/2020</td>
-                           <td class="link-hover"><a href=""><u>Link</u></a></td>
-                           <td class="link-hover"><a href="">View Details</a></td>
-                           <td class="link-hover"><a href="">No Comments</a></td>
-                        </tr>
-                        <tr>
-                           <td class="index-table-data zui-sticky-col"><a class="order-data" href="orders.html" title="">Design </a> </td>
-                           <td>Dummy</td>
-                           <td>123456</td>
-                           <td>Medium</td>
-                           <td>02/05/2020</td>
-                           <td class="link-hover"><a href=""><u>Link</u></a></td>
-                           <td class="link-hover"><a href="">View Details</a></td>
-                           <td class="link-hover"><a href="">No Comments</a></td>
-                        </tr>
-                        <tr>
-                           <td class="index-table-data zui-sticky-col"><a class="order-data" href="orders.html" title="">Design QA</a> </td>
-                           <td>Dummy</td>
-                           <td>123456</td>
-                           <td>Medium</td>
-                           <td>02/05/2020</td>
-                           <td class="link-hover"><a href=""><u>Link</u></a></td>
-                           <td class="link-hover"><a href="">View Details</a></td>
-                           <td class="link-hover"><a href="">No Comments</a></td>
-                        </tr>
-                        <tr>
-                           <td class="index-table-data zui-sticky-col"><a class="order-data" href="orders.html" title="">Alt </a> </td>
-                           <td>Dummy</td>
-                           <td>123456</td>
-                           <td>Medium</td>
-                           <td>02/05/2020</td>
-                           <td class="link-hover"><a href=""><u>Link</u></a></td>
-                           <td class="link-hover"><a href="">View Details</a></td>
-                           <td class="link-hover"><a href="">No Comments</a></td>
-                        </tr>
-                        <tr>
-                           <td class="index-table-data zui-sticky-col"><a class="order-data" href="orders.html" title="">Alt QA</a> </td>
-                           <td>Dummy</td>
-                           <td>123456</td>
-                           <td>Medium</td>
-                           <td>02/05/2020</td>
-                           <td class="link-hover"><a href=""><u>Link</u></a></td>
-                           <td class="link-hover"><a href="">View Details</a></td>
-                           <td class="link-hover"><a href="">No Comments</a></td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </div>
+                <td>Alt QA</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>2011/04/25</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+          
+        </tbody>
+
+    </table>
+</div>
+
+
+
+
             <div class="col-md col-sm- ml-3">
                <div class="cointainer-fluid">
                   <div class="row">
@@ -494,6 +536,30 @@
             <!-- End -->         
          </div>
       </div>
+
+      <script >
+        $('#dt-content-qa-table').dataTable( {
+        // "bPaginate": false,
+        // "bFilter": false,
+        // "bInfo": false
+        "bPaginate": false,
+    "bLengthChange": false,
+    "bFilter": true,
+    "bInfo": false,
+    "searching": false,
+    "sorting":false,
+    "targets": 'no-sort',
+"bSort": false,
+// "order": []
+   
+        responsive: true,
+
+        // to add the last button in pagination
+         "pagingType": "full_numbers"
+                 } );
+</script>
+
+
       <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>

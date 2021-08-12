@@ -7,7 +7,36 @@
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/bootstrap.css">
+       <link rel="stylesheet" href="plugin/Linear-progress/assets/css/jquery.rprogessbar.min.css">
       <link rel="stylesheet" href="css/style.css">
+       <!-- <link rel="stylesheet" href="plugin/Linear-progress/assets/css/style.css"> -->
+
+
+               <!--   Data tables css -->
+   <!--  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css">
+   <!--  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"> -->
+   <!--  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="datatables.net-bs/css/dataTables.bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/datetime/1.1.0/css/dataTables.dateTime.min.css">
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>   
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+        <!-- Datatable Javascript files  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js
+    "></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.1.0/js/dataTables.dateTime.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
    </head>
    <body>
       <!--   main content goes from here  -->
@@ -235,160 +264,166 @@
                   </div>
                </div>
                <!-- row close  -->
+
+
+
                <!-- Progress bar  -->
                <div class="top" >
                   <div class="row" >
-                     <div class="col-md col-sm- first-pb  small-box">
+                     <div class="col-md col-sm-3 first-pb  small-box">
                         <p class="first-pb-text">Today's YP Tasks</p>
-                        <div class="progress blue">
-                           <span class="progress-left">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <span class="progress-right">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <div class="progress-value">53/100</div>
-                        </div>
+
+
+                          <div class="percent circle" >
+    <p style="display:none;">73</p>
+    <h4 class="circular-progressbar-text" style="">50/100</h4>
+
+  </div>
                      </div>
-                     <div  class="col-md-6 col-sm- first-pb  progress-overview">
+                     <div  class="col-md-6 col-sm-6 first-pb  progress-overview">
                         <p class="first-pb-text"> YP Overview</p>
-                        <div>
-                           <div class="progress-main ">
-                              <p class="progress-text">Active Task</p>
-                              <div class="progress1">
-                                 <div class="progress-value1"></div>
-                                 <span class="completion-percentage">70</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text">On Time</p>
-                              <div class="progress1">
-                                 <div class="progress-value2"></div>
-                                 <span class="completion-percentage">60</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text">Running Late</p>
-                              <div class="progress1">
-                                 <div class="progress-value3"></div>
-                                 <span class="completion-percentage">30</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text" style="">Total Tasks</p>
-                              <div class="progress1" >
-                                 <div class="progress-value4"></div>
-                                 <span class="completion-percentage">100</span>
-                              </div>
-                           </div>
-                        </div>
+
+
+                        <div class="col-lg-12 liner-progress-box">
+
+                    <div class="single-progressbar">
+                        <h4 class="title">Acive Tasks</h4>
+                        <div class="active-tasks"></div>
+                        <!-- <div class="num">789</div> -->
+
+
+                    </div>
+                    <div class="single-progressbar">
+                        <h4 class="title">On Time</h4>
+                        <div class="on-time-tasks"></div>
+                    </div>
+                    <div class="single-progressbar">
+                        <h4 class="title">Running Late</h4>
+                        <div class="running-late-tasks"></div>
+
+                    </div>
+                    <div class="single-progressbar">
+                        <h4 class="title">Total Tasks</h4>
+                        <div class="total-tasks"></div>
+                    </div>
+           
+                </div>
                      </div>
-                     <div  class="col-md col-sm-  small-box-2" >
+                     <div  class="col-md col-sm-3  small-box-2" >
                         <p class="first-pb-text">Queries Resolved</p>
-                        <div class="progress yellow">
-                           <span class="progress-left yellow">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <span class="progress-right">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <div class="progress-value">60/100</div>
-                        </div>
+
+
+                            <div class="per circle">
+    <p style="display: none;">10</p>
+    <h4 class="circular-progressbar-text" style="">10/100</h4>
+
+  </div>
                      </div>
                   </div>
                </div>
-               <!-- Progress Div Close  -->
-               <div class="zui-wrapper table-striped " style="margin-top: 25px;">
-                  <div class="zui-scroller table-striped">
-                     <table class="zui-table table table-striped ">
-                        <thead>
-                           <tr>
-                              <th class="dash-table" scope="col"></th>
-                              <th class="dash-table" scope="col">
-                                 <div class="equal"> Net Sync</div>
-                              </th>
-                              <th class="dash-table" scope="col">
-                                 <div class="equal"> On Page SEO </div>
-                              </th>
-                              <th class="dash-table" scope="col">
-                                 <div class="equal"> Revisions</div>
-                              </th>
-                              <th class="dash-table" scope="col">
-                                 <div class="equal"> Premium CW</div>
-                              </th>
-                              <th class="dash-table" scope="col">
-                                 <div class="equal"> New Web Orders</div>
-                              </th>
-                              <th class="dash-table" scope="col">
-                                 <div class="equal pr-5">SDD </div>
-                              </th>
-                              <th class="dash-table" scope="col">
-                                 <div class="equal pr-3">Ammends </div>
-                              </th>
-                           </tr>
-                        </thead>
-                        <tbody >
-                           <tr style="margin-left: 20px" >
-                              <a href="">
-                                 <td class="index-table-data zui-sticky-col" style="background-color: #F5F5F5;" >
-                              <a  class="order-data" href="orders.html">New Orders</a> </td>
-                              <td id="index-table-hover" ><a href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              </a>
-                           </tr>
-                           <tr>
-                              <td class="index-table-data zui-sticky-col table-striped" style="background-color: white;"><a class="order-data" href="orders.html" title="">Due Today</a> </td>
-                              <td id="index-table-hover" ><a href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                           </tr>
-                           <tr>
-                              <td class="index-table-data zui-sticky-col" style="background-color: #F5F5F5;"><a  class="order-data" href="orders.html" title="">Active Now</a> </td>
-                              <td id="index-table-hover" ><a href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                           </tr>
-                           <tr>
-                              <td class="index-table-data zui-sticky-col" style="background-color: white;"><a class="order-data" href="orders.html" title=""> Query</a></td>
-                              <td id="index-table-hover" ><a href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                           </tr>
-                           <tr>
-                              <td class="index-table-data zui-sticky-col" style="background-color: #F5F5F5;"><a class="order-data" href="orders.html" title="">Resolved Query</a> </td>
-                              <td id="index-table-hover" ><a href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                              <td id="index-table-hover" ><a  href="orders.html">34</a></td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-               </div>
+
+
+
+
+<div class="" style="clear: both;margin-top: 18px; margin-left: -5px; margin-right: 3px;">
+
+
+
+    <table id="dt-index-table" class="display table dt-responsive nowrap" style="width:100%;" cellspacing="0">
+        <thead class="dt-thead">
+            <tr>
+                <th class="dt-home-table-head">Net Sync</th>
+                <th class="dt-home-table-head">On Page SEO</th>
+                <th class="dt-home-table-head">Revisions</th>
+                <th class="dt-home-table-head">Premium CW</th>
+                <th class="dt-home-table-head">New Web Orders</th>
+                <th class="dt-home-table-head">SDD</th>
+                <th class="dt-home-table-head">Amends</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="orders.html">New Orders</a> </td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+               <td>2011/04/25</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Due Today</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+               <td>2011/04/25</td>
+                <td>2011/07/25</td>
+                <td>$170,750</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Active Now</td>
+                <td>Junior Technical Author</td>
+                <td>San Francisco</td>
+                <td>2011/04/25</td>
+                <td>2009/01/12</td>
+                <td>$86,000</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Query</td>
+                <td>Senior Javascript Developer</td>
+                <td>Edinburgh</td>
+                <td>2011/04/25</td>
+                <td>2012/03/29</td>
+                <td>$433,060</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Airi Satou</td>
+                <td>Accountant</td>
+                <td>Tokyo</td>
+                <td>2011/04/25</td>
+                <td>2008/11/28</td>
+                <td>$162,700</td>
+                <td>$320,800</td>
+            </tr>
+          
+        </tbody>
+
+    </table>
+</div>
+
+
+
+
+
+
             </div>
          </div>
       </div>
       </div>
+
+      <script >
+        $('#dt-index-table').dataTable( {
+        // "bPaginate": false,
+        // "bFilter": false,
+        // "bInfo": false
+        "bPaginate": false,
+    "bLengthChange": false,
+    "bFilter": true,
+    "bInfo": false,
+    "searching": false,
+    "sorting":false,
+    "targets": 'no-sort',
+"bSort": false,
+// "order": []
+   
+        responsive: true,
+
+        // to add the last button in pagination
+         "pagingType": "full_numbers"
+                 } );
+</script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
@@ -398,5 +433,41 @@
       <script src="js/popper.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/main.js"></script>
+
+
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+<script src="plugin/progresscircle/jQuery.circleProgressBar.js"></script>
+<script>
+$('.percent').percentageLoader({
+    valElement: 'p',
+    strokeWidth: 18,
+    bgColor: '#DEEBF2',
+    ringColor: '#1AA2E5',
+    textColor: '#184D47',
+    fontSize: '20px',
+    fontWeight: 'normal'
+  });
+$('.per').percentageLoader({
+    valElement: 'p',
+    strokeWidth: 18,
+    bgColor: '#EDECE4',
+    ringColor: '#DBD5B5',
+    textColor: '#187d14',
+    fontSize: '20px',
+    fontWeight: 'normal',
+    fontWeight:'900'
+  });
+
+</script>
+
+
+
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="plugin/Linear-progress/assets/js/jQuery.rProgressbar.min.js"></script>
+    <script src="plugin/Linear-progress/assets/js/active.js"></script>
    </body>
 </html>
