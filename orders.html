@@ -341,12 +341,12 @@
                   <!-- Dropdown button -->
                   <div class="btn-group btn-grp-index3 filter-options" style="width: 160px;">
                      <!-- <input class=" date-range " type="text" name="dates" value="01/01/2021 - 01/15/2021" placeholder="heyyy" /> -->
-                     <input type="text" class=" date-range " value="from" id="min" name="min">
+                     <input type="text" class=" date-range " value="Date : From" id="min" name="min">
                   </div>
 
                   <div class="btn-group btn-grp-index3 filter-options" style="width: 160px;">
                      <!-- <input class=" date-range " type="text" name="dates" value="01/01/2021 - 01/15/2021" placeholder="heyyy" /> -->
-                     <input type="text" class=" date-range " value="to" id="max" name="max">
+                     <input type="text" class=" date-range " value="Date : To" id="max" name="max">
                   </div>
 
                </div>
@@ -356,22 +356,6 @@
 
 
    <div class="container-fluid" style="clear: both;margin-top: 18px; margin-left: -15px;">
-
-<!-- 
-    <table border="0" cellspacing="5" cellpadding="5">
-        <tbody><tr>
-            <td>From:</td>
-            <td><input type="text" id="min" name="min"></td>
-        </tr>
-        <tr>
-            <td>To:</td>
-            <td><input type="text" id="max" name="max"></td>
-        </tr>
-    </tbody></table> -->
-
-
-
-
 
 
     <table id="example" class="display table dt-responsive nowrap" style="width:100%;" cellspacing="0">
@@ -387,14 +371,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><a href="style.css">Tiger Nixon</a> </td>
-                <td>System Architect</td>
-                <td>Edinburgh</td>
-               <td>2011/04/25</td>
-                <td>2011/04/25</td>
-                <td>$320,800</td>
-                <td>$320,800</td>
+            <tr style="color: red;">
+                <td><a style="color: red" href="style.css">Tiger Nixon</a> </td>
+                <td style="color: red">System Architect</td>
+                <td style="color: red">Edinburgh</td>
+               <td style="color: red">2011/04/25</td>
+                <td style="color: red">2011/04/25</td>
+                <td style="color: red">$320,800</td>
+                <td style="color: red">$320,800</td>
             </tr>
             <tr>
                 <td>Garrett Winters</td>
@@ -909,28 +893,6 @@
 
 
 
-<!--                <div class="text-center">
-                  <div class="pagination mt-4">
-                      <a href="#"><i class="fa fa-chevron-left pagi-icon-left"></i></a>
-
-                    
-                        
-                  
-                     <a href="#" class="active-nav ">1</a>
-                     <a href="#">2</a>
-                     <a href="#">3</a>
-                     <a href="#">.</a>
-                     <a href="#">.</a>
-                     <a href="#">.</a>
-                     <a href="#">20</a>
-               
-             
-                     
-                     <a href="#"><i class="fa fa-chevron-right pagi-icon-right"></i></a>
-                  </div>
-               </div> -->
-
-
 
             </div>
          </div>
@@ -1000,6 +962,13 @@ $(document).ready(function() {
     $('#min, #max').on('change', function () {
         table.draw();
     });
+
+
+});
+
+$.extend(true, $.fn.dataTable.defaults.oLanguage.oPaginate, {
+    sNext: '<i class="fa fa-chevron-right" ></i>',
+    sPrevious: '<i class="fa fa-chevron-left" ></i>'
 });
 
 

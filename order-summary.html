@@ -12,6 +12,7 @@
       <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/bootstrap.css">
+          <link rel="stylesheet" href="plugin/Linear-progress/assets/css/jquery.rprogessbar.min.css">
       <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
@@ -246,60 +247,48 @@
                   <div class="row" >
                      <div class="col-md col-sm- first-pb  small-box ">
                         <p class="first-pb-text">Today's YP Tasks</p>
-                        <div class="progress blue">
-                           <span class="progress-left">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <span class="progress-right">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <div class="progress-value">53/100</div>
-                        </div>
+            
+                          <div class="percent circle" >
+    <p style="display:none;">73</p>
+    <h4 class="circular-progressbar-text" style="">50/100</h4>
+
+  </div>
                      </div>
                      <div  class="col-md-6 col-sm- first-pb  progress-overview">
                         <p class="first-pb-text"> YP Overview</p>
-                        <div>
-                           <div class="progress-main ">
-                              <p class="progress-text">Active Task</p>
-                              <div class="progress1">
-                                 <div class="progress-value1"></div>
-                                 <span class="completion-percentage">70</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text">On Time</p>
-                              <div class="progress1">
-                                 <div class="progress-value2"></div>
-                                 <span class="completion-percentage">60</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text">Running Late</p>
-                              <div class="progress1">
-                                 <div class="progress-value3"></div>
-                                 <span class="completion-percentage">30</span>
-                              </div>
-                           </div>
-                           <div class="progress-main">
-                              <p class="progress-text" style="">Total Tasks</p>
-                              <div class="progress1" >
-                                 <div class="progress-value4"></div>
-                                 <span class="completion-percentage">100</span>
-                              </div>
-                           </div>
-                        </div>
+         <div class="col-lg-12 liner-progress-box">
+
+                    <div class="single-progressbar">
+                        <h4 class="title">Acive Tasks</h4>
+                        <div class="active-tasks"></div>
+                        <!-- <div class="num">789</div> -->
+
+
+                    </div>
+                    <div class="single-progressbar">
+                        <h4 class="title">On Time</h4>
+                        <div class="on-time-tasks"></div>
+                    </div>
+                    <div class="single-progressbar">
+                        <h4 class="title">Running Late</h4>
+                        <div class="running-late-tasks"></div>
+
+                    </div>
+                    <div class="single-progressbar">
+                        <h4 class="title">Total Tasks</h4>
+                        <div class="total-tasks"></div>
+                    </div>
+           
+                </div>
                      </div>
                      <div  class="col-md col-sm-  box-shadow-top small-box-2" >
                         <p class="first-pb-text">Queries Resolved</p>
-                        <div class="progress yellow">
-                           <span class="progress-left yellow">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <span class="progress-right">
-                           <span class="progress-bar"></span>
-                           </span>
-                           <div class="progress-value">60/100</div>
-                        </div>
+ 
+                            <div class="per circle">
+    <p style="display: none;">10</p>
+    <h4 class="circular-progressbar-text" style="">10/100</h4>
+
+  </div>
                      </div>
                   </div>
                </div>
@@ -414,5 +403,42 @@
       <script src="js/popper.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/main.js"></script>
+
+
+
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+<script src="plugin/progresscircle/jQuery.circleProgressBar.js"></script>
+<script>
+$('.percent').percentageLoader({
+    valElement: 'p',
+    strokeWidth: 18,
+    bgColor: '#DEEBF2',
+    ringColor: '#1AA2E5',
+    textColor: '#184D47',
+    fontSize: '20px',
+    fontWeight: 'normal'
+  });
+$('.per').percentageLoader({
+    valElement: 'p',
+    strokeWidth: 18,
+    bgColor: '#EDECE4',
+    ringColor: '#DBD5B5',
+    textColor: '#187d14',
+    fontSize: '20px',
+    fontWeight: 'normal',
+    fontWeight:'900'
+  });
+
+</script>
+
+
+
+   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="plugin/Linear-progress/assets/js/jQuery.rProgressbar.min.js"></script>
+    <script src="plugin/Linear-progress/assets/js/active.js"></script>
    </body>
 </html>
