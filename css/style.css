@@ -251,9 +251,15 @@ h5,
     padding-left: 60px;
 }
 
+@media (min-width: 1025px) and (max-width: 1129px) {
+    .total-tasks{
+        width: 80%;
+    }
 
-
-/*991.98  --> 1080*/
+    .small-box-2{
+        margin-top: 20px;
+    }
+}
 
 @media (max-width: 1025px) {
     #sidebar {
@@ -300,8 +306,6 @@ h5,
 }
 
 
-/*
-991.98 --> 1080*/
 
 @media (max-width: 1025px) {
     #sidebar .custom-menu .btn.btn-primary {
@@ -1902,7 +1906,109 @@ ________________________________________________
 */
 
 
+
+@media (min-width:320px) and (max-width: 390px) {
+    .circle > svg {
+        transform: scale(0.8);
+        margin-left: -13px;
+    }
+
+    .circular-progressbar-text {
+    margin-top: -90px;
+    margin-left: 31px;
+    color: #184D47;
+    font-family: 'AvenirNextBold';
+    font-weight: 900;
+    margin-left: 23px;
+    font-size: 20px;
+}
+
+    .mob-view{
+        margin-top: 20px;
+    }
+
+     .small-box {
+        /*height: 225px;*/
+        width: 45%;
+    }
+
+        .small-box-2 {
+        height: 260px;
+        width: 45%;
+        background-color: white;
+        margin-left: 187px;
+        margin-top: -569px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        margin-right: 25px;
+    }
+
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
+
+
+
+}
+
+@media (min-width:390px) and (max-width: 479px) {
+
+        .circle > svg {
+        transform: scale(0.8);
+       /* margin-left: -13px;*/
+    }
+
+    .circular-progressbar-text {
+    margin-top: -90px;
+    margin-left: 38px;
+    color: #184D47;
+    font-family: 'AvenirNextBold';
+    font-weight: 900;
+  /*  margin-left: 23px;*/
+    font-size: 20px;
+}
+    .mob-view{
+        margin-top: 20px;
+    }
+
+     .small-box {
+        height: 225px;
+        width: 50%;
+    }
+
+        .small-box-2 {
+        height: 225px;
+        width: 50%;
+        background-color: white;
+        margin-left: 210px;
+        margin-top: -533px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-right: 20px;
+        margin-right: 25px;
+    }
+
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
+
+}
+
+
 @media (min-width:320px) and (max-width: 479px) {
+
+
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     
 /*
@@ -1943,7 +2049,7 @@ ________________________________________________
     min-height: 77vh;
 }
 
-    .small-box-2 {
+/*    .small-box-2 {
         height: 200px;
         width: 153px;
         background-color: white;
@@ -1954,7 +2060,7 @@ ________________________________________________
         padding-top: 20px;
         padding-right: 20px;
         margin-right: 25px;
-    }
+    }*/
 
     .circle{
     height: 100px;
@@ -2081,10 +2187,10 @@ ________________________________________________
         padding-top: 33px;
      /*   padding-left: 3px;*/
     }
-    .small-box {
+ /*   .small-box {
         height: 200px;
         width: 153px;
-    }
+    }*/
 
     .progress {
         height: 115px;
@@ -2374,7 +2480,7 @@ ________________________________________________
     }
     .login-page {
         background-color: #1AA2E5;
-        /*margin-top: 250px;*/
+        margin-top: 50px;
         /* height: 432px;*/
         
         height: 100%;
@@ -2397,7 +2503,7 @@ ________________________________________________
     }
     .login,
     .image {
-        min-height: 60vh;
+        min-height: 68vh;
     }
 
     #bottom {
@@ -2561,6 +2667,7 @@ ________________________________________________
         height: 240px;
         margin-top: 20px;
         margin-left: 10px;
+        
     }
     .bottom-prev-link {
         float: right;
@@ -2599,6 +2706,23 @@ ________________________________________________
 /* On screens between 360px and 470px */
 
 @media (min-width: 480px) and (max-width: 575px) {
+
+        .circular-progressbar-text {
+    margin-top: -90px;
+    margin-left: 31px;
+    color: #184D47;
+    font-family: 'AvenirNextBold';
+    font-weight: 900;
+ /*   margin-left: 20px;*/
+    font-size: 22px;
+}
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
 
     .login-button {
     height: 50px;
@@ -2836,15 +2960,15 @@ ________________________________________________
         height: 100%;
     }
     .small-box {
-        height: 200px;
+        /*height: 200px;*/
         width: 250px;
     }
     .small-box-2 {
-        height: 200px;
+        height: 240px;
         width: 250px;
         background-color: white;
         margin-left: 298px;
-        margin-top: -445px;
+        margin-top: -509px;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -3022,12 +3146,14 @@ ________________________________________________
         padding-bottom: 30px;
         text-align: center;
         margin-top: 40px;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 21px;
+        line-height: 1.6;
+    letter-spacing: -1.00px;
     }
     .login-page {
         background-color: #1AA2E5;
-       /* margin-top: 150px;*/
+        margin-top: 50px;
         /*height: 432px;*/
         
         margin-right: 20px;
@@ -3199,6 +3325,27 @@ ________________________________________________
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+
+    .total-tasks{
+        width: 60%; 
+    }
+
+    .circular-progressbar-text{
+    margin-top: -90px;
+    margin-left: 31px;
+    color: #184D47;
+    font-family: 'AvenirNextBold';
+    font-weight: 900;
+
+}
+
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
 
 
 
@@ -3460,7 +3607,7 @@ ________________________________________________
         width: 90%;
         height: 100%;
     }
-    .small-box {
+/*    .small-box {
         height: 200px;
         width: 320px;
     }
@@ -3475,7 +3622,7 @@ ________________________________________________
     padding-top: 20px;
     padding-right: 20px;
     margin-right: 0px;
-}
+}*/
     .progress {
         height: 115px;
         width: 115px;
@@ -3495,7 +3642,7 @@ ________________________________________________
     }
     .first-pb {
         background-color: white;
-        margin-left: 34px;
+        margin-left: 15px;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -3636,8 +3783,12 @@ ________________________________________________
         display: none;
     }
     .login {
-        margin-top: -225px;
-        margin-bottom: -75px;
+       /* margin-top: -225px;
+        margin-bottom: -75px;*/
+    }
+
+    .login, .image{
+        min-height: 80vh;
     }
     .login-page {
         background-color: #1AA2E5;
@@ -3801,6 +3952,8 @@ ________________________________________________
     margin-top: 40px;
     line-height: 21px;
     margin-bottom: 15px;
+    line-height: 1.6;
+    letter-spacing: -1.00px;
     }
 
     .row-class{
@@ -3847,6 +4000,27 @@ ________________________________________________
 
 
 @media (min-width: 768px) and (max-width: 991px){
+
+    .total-tasks{
+        width: 70%;
+    }
+
+        .circular-progressbar-text{
+    margin-top: -90px;
+    margin-left: 31px;
+    color: #184D47;
+    font-family: 'AvenirNextBold';
+    font-weight: 900;
+
+}
+
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
 
 
 .single-progressbar {
@@ -3975,6 +4149,23 @@ ________________________________________________
 
 @media (min-width: 992px) and (max-width: 1200px) {
 
+    .circular-progressbar-text{
+    margin-top: -90px;
+    margin-left: 31px;
+    color: #184D47;
+    font-family: 'AvenirNextBold';
+    font-weight: 900;
+
+}
+
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
+
 
 .single-progressbar {
     margin-bottom: 30px;
@@ -4018,6 +4209,14 @@ ________________________________________________
 
 
 @media (min-width: 768px) and (max-width: 1200px) {
+
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
 
             /*tables*/
     .dataTables_wrapper .dataTables_paginate .paginate_button {
@@ -4223,6 +4422,23 @@ ________________________________________________
 }
 @media (min-width: 1201px) and (max-width: 1800px) {
 
+        .circular-progressbar-text{
+    margin-top: -90px;
+    margin-left: 31px;
+    color: #184D47;
+    font-family: 'AvenirNextBold';
+    font-weight: 900;
+
+}
+
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
+
 
 .single-progressbar {
     margin-bottom: 30px;
@@ -4365,6 +4581,23 @@ ________________________________________________
 
 @media (min-width: 1390px) {
 
+        .circular-progressbar-text{
+    margin-top: -90px;
+    margin-left: 31px;
+    color: #184D47;
+    font-family: 'AvenirNextBold';
+    font-weight: 900;
+
+}
+
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
+
 
 .single-progressbar {
     margin-bottom: 30px;
@@ -4443,6 +4676,13 @@ ________________________________________________
 }
 }
 @media screen and (min-width: 1400px) {
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
 
 
 
@@ -4783,6 +5023,14 @@ a:hover {
 
 @media screen and (min-width: 1800px) {
 
+    .single-progressbar .title {
+    font-size: 13px;
+    line-height: 10px;
+    font-family: "verdana";
+    color: #184d47;
+
+}
+
 
 .single-progressbar {
     margin-bottom: 30px;
@@ -5035,11 +5283,7 @@ tspan{
         font-size:14px
     }
 }
-@media only screen and (max-width:1023px){
-    .jquery-script-ads{
-        display:none
-    }
-}
+
 
 .percent{
 display: block;
@@ -5056,14 +5300,14 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.circular-progressbar-text{
+/*.circular-progressbar-text{
     margin-top: -90px;
     margin-left: 31px;
     color: #184D47;
     font-family: 'AvenirNextBold';
     font-weight: 900;
 
-}
+}*/
 
 
 
@@ -5073,13 +5317,7 @@ margin-right: auto;
     padding-left: 0px;
 }
 
-.single-progressbar .title {
-    font-size: 13px;
-    line-height: 10px;
-    font-family: "verdana";
-    color: #184d47;
 
-}
 
 
 #multi-item-example{

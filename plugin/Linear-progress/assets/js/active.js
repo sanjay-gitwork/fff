@@ -3,7 +3,7 @@
     let active = '70';
     let time = '60';
     let late = '10';
-    let total = '200'; // let num = '200';
+    let total = '400'; // let num = '200';
    
     ;
 
