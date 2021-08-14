@@ -94,13 +94,13 @@
 }
 
 body {
-    font-family: "Poppins", Arial, sans-serif;
+    
     font-size: 14px;
     line-height: 1.8;
     font-weight: normal;
     background: #f8f8f8;
     color: gray;
-    font-family: "a"
+    
 }
 
 a {
@@ -144,7 +144,7 @@ h5,
 .h5 {
     line-height: 1.5;
     font-weight: 400;
-    font-family: "Poppins", Arial, sans-serif;
+    
     color: #000;
 }
 
@@ -925,7 +925,7 @@ td>a:hover {
 
 .project-sum>div>ul>li {
     list-style-type: none;
-    font-size: 12px;
+    font-size: 13px;
     color: #184D47;
     font-family: "AvenirNext-Medium";
     /*  margin-top: 20px;*/
@@ -1148,19 +1148,19 @@ td>a:hover {
 }
 
 .mid {
-    margin-right: 40px;
+    margin-right: 44px;
 }
 
 .status {
-    margin-right: 32px;
+    margin-right: 33px;
 }
 
 .received-date {
-    margin-right: 11px;
+    margin-right: 13px;
 }
 
 .due-date {
-    margin-right: 39px;
+    margin-right: 42px;
 }
 
 .started-on {
@@ -1908,6 +1908,13 @@ ________________________________________________
 
 
 @media (min-width:320px) and (max-width: 390px) {
+
+/*   .carousel-inner {
+    position: relative;
+    width: 112%;
+    overflow: hidden;
+}*/
+
     .circle > svg {
         transform: scale(0.8);
         margin-left: -13px;
@@ -1933,11 +1940,11 @@ ________________________________________________
     }
 
         .small-box-2 {
-        height: 260px;
+        height: 240px;
         width: 45%;
         background-color: white;
         margin-left: 187px;
-        margin-top: -569px;
+        margin-top: -545px;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -2043,6 +2050,11 @@ ________________________________________________
         font-family: "verdana";
         color: #184D47;
     }
+
+    #multi-item-example{
+    margin-right: 0px;
+}
+
 
     .login,
 .image {
@@ -2246,9 +2258,9 @@ ________________________________________________
     text-decoration: none !important;
     cursor: pointer;
     cursor: hand;
-    color: #184D47 !important;
+    /*color: #184D47 !important;*/
     border: 1px solid transparent;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .dt-running-late{
@@ -2260,13 +2272,14 @@ ________________________________________________
 
   /*  comment.html*/
   .mobile-slider{
-    margin-right: 20px;
-    margin-left: 20px;
+   /* margin-right: 20px;
+    margin-left: 20px;*/
     width: 100%;
   }
 
   .controls-top{
     margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 5px;
     cursor: pointer;
   }
@@ -2354,9 +2367,9 @@ ________________________________________________
     text-decoration: none !important;
     cursor: pointer;
     cursor: hand;
-    color: #184D47 !important;
+   /* color: #184D47 !important;*/
     border: 1px solid transparent;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 
@@ -2525,7 +2538,7 @@ ________________________________________________
     .logout-cancel {
         /*margin-left: 20px;*/
         
-        width: 85px;
+        width: 69px;
         border-radius: 10px;
     }
     .logout-btn {
@@ -2751,9 +2764,9 @@ ________________________________________________
     text-decoration: none !important;
     cursor: pointer;
     cursor: hand;
-    color: #184D47 !important;
+   /* color: #184D47 !important;*/
     border: 1px solid transparent;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 
@@ -2765,7 +2778,7 @@ ________________________________________________
   }
 
   .controls-top{
-    margin-left: 15px;
+    /*margin-left: 15px;*/
     margin-bottom: 5px;
     cursor: pointer;
   }
@@ -3382,9 +3395,9 @@ ________________________________________________
     text-decoration: none !important;
     cursor: pointer;
     cursor: hand;
-    color: #184D47 !important;
+   /* color: #184D47 !important;*/
     border: 1px solid transparent;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 
@@ -3837,6 +3850,7 @@ ________________________________________________
     .comment-height {
         height: 480px;
         margin-top: 20px;
+        margin-left: 10px;
     }
     .comment-box-container {
         margin-bottom: 20px;
@@ -4131,7 +4145,7 @@ ________________________________________________
 }
 
 .sum-data{
-    font-size: 14px;
+    font-size: 13px;
 }
 #project-sum-box{
     padding-left: 15px;
@@ -4229,9 +4243,9 @@ ________________________________________________
     text-decoration: none !important;
     cursor: pointer;
     cursor: hand;
-    color: #184D47 !important;
+    /*color: #184D47 !important;*/
     border: 1px solid transparent;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 
@@ -4472,9 +4486,9 @@ ________________________________________________
     text-decoration: none !important;
     cursor: pointer;
     cursor: hand;
-    color: #184D47 !important;
+    /*color: #184D47 !important;*/
     border: 1px solid transparent;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 
@@ -4616,9 +4630,9 @@ ________________________________________________
     text-decoration: none !important;
     cursor: pointer;
     cursor: hand;
-    color: #184D47 !important;
+    /*color: #184D47 !important;*/
     border: 1px solid transparent;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
     .mobile-slider{
@@ -4749,7 +4763,7 @@ ________________________________________________
         margin-right: auto;
         /*width: 50%;*/
         
-        width: 85%;
+        width: 98%;
         /*width: 30%;*/
         
         padding-right: 20px;
@@ -5320,9 +5334,7 @@ margin-right: auto;
 
 
 
-#multi-item-example{
-    margin-right: 30px;
-}
+
 
 /*.card {
     margin-bottom: 30px;
@@ -5452,6 +5464,7 @@ div.dataTables_wrapper div.dataTables_length label {
     background-color: #1AA2E5;
     border-right: 5px;
     color: #ffffff;
+    border-radius: 5px;
 }
 
 #example_wrapper{
@@ -5528,6 +5541,38 @@ table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before
 table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
     right: 0.5em;
     content: "\21C2" !important;
+}
+
+.login-main-page{
+    overflow: hidden;
+}
+
+
+
+/*Order summary */
+.due-today > tbody > tr > td{
+    font-family: "AvenirNext-Medium";
+}
+
+.orders-page-table{
+    clear: both;
+    margin-top: 18px; 
+    margin-left: -15px;
+}
+
+.orders-page-datatable > tbody > tr > td {
+    font-family: "AvenirNext-Medium";
+}
+
+.content-qa-datatable> tbody> tr > td {
+    font-family: "AvenirNext-Medium"
+}
+
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td.no-btn:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th.no-btn:first-child:before
+{
+  content: none;
 }
 
 

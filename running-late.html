@@ -10,8 +10,6 @@
       <link rel="stylesheet" href="css/style.css">
 
 
-
-
                <!--   Data tables css -->
    <!--  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"> -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
@@ -24,7 +22,7 @@
 
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>  
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>   
-  <!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<!--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 
 
         <!-- Datatable Javascript files  -->
@@ -37,18 +35,21 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.1.0/js/dataTables.dateTime.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+
+
    </head>
    <body>
       <div class="wrapper d-flex align-items-stretch">
       <!--  Side Navigation  -->
       <nav id="sidebar">
          <div class="custom-menu">
-            <div type="button" id="sidebarCollapse">
+            <div type="button" id="sidebarCollapse" >
                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#184D47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
-                     <line x1="3" y1="12" x2="21" y2="12"></line>
-                     <line x1="3" y1="6" x2="21" y2="6"></line>
-                     <line x1="3" y1="18" x2="21" y2="18"></line>
-                  </svg>
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+               </svg>
             </div>
          </div>
          <ul class="list-unstyled components mb-5">
@@ -153,7 +154,7 @@
          <a href="#"><img class="" src="feather/redo.svg" alt=""> Revisions</a>
          <a href="#"> <img class="" src="feather/refresh-cw.svg" alt=""> Net Sync</a>
          <a href="#"> <img class="" src="feather/zoom-in.svg" alt=""> On Page SEO</a>
-         <a href="#"> <img class="second-ellipse" src="feather/ellipse.svg" alt=""> Premium CW</a>
+         <a href="#"> <img class="second-ellipse" src="feather/ellipse.svg"  alt=""> Premium CW</a>
          <a href="#"><img class="second-ellipse" src="feather/ellipse.svg" alt=""> SDD </a>
          <a href="account.html"><img class="" src="feather/user.svg" alt=""> Account </a>
          <a href="#" data-toggle="modal" data-target="#LogoutModalCenter"><img class="" src="feather/log-out.svg" alt=""> Logout </a>
@@ -263,7 +264,6 @@
                   </div>
             </div>
             <!-- Modal -->
-
          </div>
          <!-- row close  -->
          <!--  Logout Modal -->
@@ -272,7 +272,7 @@
                <div class="modal-content">
                   <div class="">
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                     <span class="closeX" aria-hidden="true">X</span>
+                     <span class="closeX" aria-hidden="true">&times;</span>
                      </button>
                   </div>
                   <div class="modal-body">
@@ -297,7 +297,7 @@
                </div>
             </div>
          </div>
-         <div class="content  content-qa-page">
+         <div class="content content-qa-page">
             <div class="row">
                <div class="col-md col-sm-">
                   <div class="">
@@ -323,13 +323,13 @@
                                  <span class="p-name">Project Name &ensp; </span>:<span class="sum-data">&ensp; Voice Page</span>
                               </div>
                            </li>
-                           <li><span class="project-type p-type">Project Type &ensp; </span> : <span class="sum-data"> &ensp; WEBE</span></li>
+                           <li><span class="project-type">Project Type &ensp; </span> : <span class="sum-data"> &ensp; WEBE</span></li>
                            <li><span class="sum-data"><a href=""><u> MCET link</u></a> </span></li>
                         </ul>
                         <ul class="col-md-6 col-lg-3 " >
                            <li><span class="mid">MID </span>:<span class="sum-data">&ensp; 1234567</span></li>
                            <li><span>Language  &ensp; </span> : <span class="sum-data"> &ensp; English</span></li>
-                           <li><span class="status" >Status </span> : <span style="color: red;" class="sum-data"> &ensp; Running late</span></li>
+                           <li><span class="status" >Status </span> : <span class="sum-data" style="color: #F8333C;"> &ensp; Running Late</span></li>
                         </ul>
                         <ul class="col-md-6 col-lg-3" >
                            <li><span>Total Time Taken &ensp; </span>:<span class="sum-data">&ensp; 10 Days</span></li>
@@ -337,14 +337,14 @@
                            <li><span class="due-date">Due Date  &ensp; </span> : <span class="sum-data"> &ensp; 22/05/2021</span></li>
                         </ul>
                         <ul class="col-md-6 col-lg-3 float-right business-sum"  id="business-sum-last" style="float: right;">
-                           <li><span>Within SLA &ensp; </span>:<span style="color: #F8333C;" class="sum-data"> &ensp; No.(2)</span></li>
+                           <li><span>Within SLA &ensp; </span>:<span class="sum-data"> &ensp; - </span></li>
                            <li><span class="started-on">Started on  &ensp; </span> : <span class="sum-data"> &ensp; 22/05/2021</span></li>
-                           <li><span class="end-date" >End Date  &ensp; </span> : <span class="sum-data"> &ensp; 22/05/2021</span></li>
+                           <li><span class="end-date" >End Date  &ensp; </span> : <span class="sum-data"> &ensp; - </span></li>
                         </ul>
                      </div>
                   </div>
-                  <!--  second project detail box -->
-              <!--     <div class="container scroll-project-box mt-4">
+                  <!--  second project detail box (Mobile View) -->
+        <!--           <div class="container scroll-project-box mt-4">
                      <div class="row flex-row all-box flex-nowrap">
                         <div class="col-">
                            <div class="well ">
@@ -352,12 +352,13 @@
                               <ul class="col-md-6 " >
                                  <li class="comment-project-sum" ><span class="" style="margin-right: 20px;">Project Name &ensp; </span>:<span class="sum-data margin-left-comment">&ensp; Voice Page</span></li>
                                  <li class="comment-project-sum"><span class="project-type" style="margin-right: 28px">Project Type &ensp; </span> : <span class="sum-data" style="margin-left: 17px;"> &ensp; WEBE</span></li>
-                                 <li class="comment-project-sum"><span class="sum-data" style="text-decoration: underline;">MCET link</span></li>
+                                 <li class="comment-project-sum"><span class="sum-data"><a href=""><u> MCET link</u></a> </span></li>
+                             
                               </ul>
                               <ul class="col-md-6">
                                  <li class="comment-project-sum"><span style="margin-right: 77px;">MID &ensp; </span>:<span class="sum-data margin-left-comment">&ensp; 1234567</span></li>
                                  <li class="comment-project-sum"><span style="margin-right: 42px;">Language  &ensp; </span> : <span class="sum-data margin-left-comment"> &ensp; English</span></li>
-                                 <li class="comment-project-sum"><span style="margin-right: 75px;">Status </span> : <span class="sum-data margin-left-comment" style="color: red;"> &ensp; Running late</span></li>
+                                 <li class="comment-project-sum"><span style="margin-right: 75px;">Status </span> : <span class="sum-data margin-left-comment"> &ensp; Content QA</span></li>
                               </ul>
                            </div>
                         </div>
@@ -370,17 +371,16 @@
                                  <li class="comment-project-sum"><span class="due-date" style="margin-right: 58px;">Due Date &ensp; </span> : <span class="sum-data margin-left-comment"> &ensp; 11/05/2021</span></li>
                               </ul>
                               <ul class="col-md-6" >
-                                 <li class="comment-project-sum"><span style="margin-right: 55px;">Within Sla &ensp; </span>: <span class="sum-data margin-left-comment" style="color: #F8333C; ">&ensp; No.(2)</span></li>
+                                 <li class="comment-project-sum"><span style="margin-right: 55px;">Within Sla &ensp; </span>: <span class="sum-data margin-left-comment ">&ensp; - </span></li>
                                  <li class="comment-project-sum"><span class="started-on" style="margin-right: 50px;">Started On  &ensp; </span> : <span class="sum-data margin-left-comment"> &ensp; 13/04/20</span></li>
-                                 <li class="comment-project-sum"><span style="margin-right: 69px;">End Date </span> : <span class="sum-data margin-left-comment"> &ensp; 20/04/20</span></li>
+                                 <li class="comment-project-sum"><span style="margin-right: 69px;">End Date </span> : <span class="sum-data margin-left-comment"> &ensp; - </span></li>
                               </ul>
                            </div>
                         </div>
                      </div>
                   </div> -->
 
-
-                  <div class=" mobile-slider my-4 mt-5  " style="width: 100%;">
+                  <div class="container-fluid mobile-slider my-4 mt-5">
 
 
 
@@ -449,7 +449,7 @@
 
                            <p class="slider-data"><span class="" style="margin-right: 53px;">Language</span> <span class="dot-seperator">:</span><span class="project-text-bold" style="margin-left: 30px;">french</span></p>
 
-                           <p class="slider-data"><span class="" style="margin-right: 80px;">Status</span> <span class="dot-seperator">:</span> <span class="project-text-bold" style="margin-left: 30px; color: #17A651; ">Completed</span></p>
+                           <p class="slider-data"><span class="" style="margin-right: 80px;">Status</span> <span class="dot-seperator">:</span> <span class="project-text-bold" style="margin-left: 30px; color: red ">Running Late</span></p>
 
                </p>
                 <!-- <a class="btn btn-primary">Button</a> -->
@@ -515,14 +515,14 @@
 </div>
                </div>
             </div>
+       
+
+
+<div class="" style="clear: both; margin-top: 18px;  margin-right: 3px;">
 
 
 
-<div class="dt-running-late" style="clear: both; margin-top: 18px;  margin-right: 3px;">
-
-
-
-    <table id="dt-running-late-table" class="display table dt-responsive nowrap" style="width:100%;" cellspacing="0">
+    <table id="dt-content-qa-table" class="display table dt-responsive nowrap content-qa-datatable" style="width:100%;" cellspacing="0">
         <thead class="dt-thead">
             <tr>
                 <th class="dt-home-table-head">Sub Tasks</th>
@@ -542,47 +542,47 @@
                 <td>Edinburgh</td>
                <td>2011/04/25</td>
                 <td>2011/04/25</td>
-                <td><a href="#"><u>Link</u></a></td>
+                <td>$320,800</td>
                 <td>$320,800</td>
                 <td>$320,800</td>
             </tr>
             <tr>
-                <td><a href="orders.html">Meta Data QA</a></td>
+                <td>Meta Data QA</td>
                 <td>Accountant</td>
                 <td>Tokyo</td>
                <td>2011/04/25</td>
                 <td>2011/07/25</td>
-               <td><a href="#"><u>Link</u></a></td>
-                <td>$320,800</td> 
+                <td>$170,750</td>
+                <td>$320,800</td>
                 <td>$320,800</td>
             </tr>
             <tr class="running-late">
-                <td><a href="orders.html">Content</a></td>
+                <td>Content</td>
                 <td>Junior Technical Author</td>
                 <td>San Francisco</td>
                 <td>2011/04/25</td>
                 <td>2009/01/12</td>
-                <td><a href="#"><u>Link</u></a></td>
+                <td>$86,000</td>
                 <td>$320,800</td>
                 <td>$320,800</td>
             </tr>
             <tr class="running-late">
-                <td><a href="orders.html">Content QA</a> </td>
+                <td>Content QA</td>
                 <td>Senior Javascript Developer</td>
                 <td>Edinburgh</td>
                 <td>2011/04/25</td>
                 <td>2012/03/29</td>
-                <td><a href="#"><u>Link</u></a></td>
+                <td>$433,060</td>
                 <td>$320,800</td>
                 <td>$320,800</td>
             </tr>
             <tr class="running-late">
-                <td><a href="orders.html">Design</a></td>
+                <td>Design</td>
                 <td>Accountant</td>
                 <td>Tokyo</td>
                 <td>2011/04/25</td>
                 <td>2008/11/28</td>
-                <td><a href="#"><u>Link</u></a></td>
+                <td>$162,700</td>
                 <td>$320,800</td>
                 <td>$320,800</td>
             </tr>
@@ -590,34 +590,34 @@
 
 
             <tr class="running-late-start">
-                <td><a href="orders.html">Design QA</a></td>
+                <td>Design QA</td>
                 <td>Accountant</td>
                 <td>Tokyo</td>
                 <td>2011/04/25</td>
                 <td>2008/11/28</td>
-                <td><a href="#"><u>Link</u></a></td>
+                <td>$162,700</td>
                 <td>$320,800</td>
                 <td>$320,800</td>
             </tr>
 
                         <tr>
-                <td><a href="orders.html">Alt</a></td>
+                <td>Alt</td>
                 <td>Accountant</td>
                 <td>Tokyo</td>
                 <td>2011/04/25</td>
                 <td>2008/11/28</td>
-                <td><a href="#"><u>Link</u></a></td>
+                <td>$162,700</td>
                 <td>$320,800</td>
                 <td>$320,800</td>
             </tr>
 
                         <tr>
-                <td><a href="orders.html"> Alt QA</a></td>
+                <td>Alt QA</td>
                 <td>Accountant</td>
                 <td>Tokyo</td>
                 <td>2011/04/25</td>
                 <td>2008/11/28</td>
-                <td><a href="#"><u>Link</u></a></td>
+                <td>$162,700</td>
                 <td>$320,800</td>
                 <td>$320,800</td>
             </tr>
@@ -630,7 +630,7 @@
 
 
 
-            <div style="margin-left: 10px;" class="col-md col-sm-">
+            <div class="col-md col-sm- ml-3">
                <div class="cointainer-fluid">
                   <div class="row">
                      <div class="col mt-2 ">
@@ -639,7 +639,7 @@
                               &emsp;
                               <span>
                                  <a href="orders.html" class="bottom-nav sum-data">
-                                    <svg style="margin-left: -40px;" class="mr-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#184D47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                                    <svg class="mr-1 mob-go-back-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#184D47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
                                        <line x1="19" y1="12" x2="5" y2="12"></line>
                                        <polyline points="12 19 5 12 12 5"></polyline>
                                     </svg>
@@ -667,13 +667,12 @@
                   </div>
                </div>
             </div>
-            <!-- Progress Div Close  -->
             <!-- End -->         
          </div>
       </div>
 
-       <script >
-        $('#dt-running-late-table').dataTable( {
+      <script >
+        $('#dt-content-qa-table').dataTable( {
         // "bPaginate": false,
         // "bFilter": false,
         // "bInfo": false
@@ -697,8 +696,8 @@
 
       <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+   <!--    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
       <script type="text/javascript" src="js/simple.js"></script>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.js"></script>
