@@ -251,7 +251,14 @@ h5,
     padding-left: 60px;
 }
 
+@media (min-width: 1025px) and (max-width: 1229px) {
+          .third-box{
+        margin-top: 20px;
+    }
+}
+
 @media (min-width: 1025px) and (max-width: 1129px) {
+
     .total-tasks{
         width: 80%;
     }
@@ -333,6 +340,7 @@ h5,
 /*// hide the toggle button on screen size => 1000px*/
 
 @media (min-width: 1025px) {
+
     #sidebar .custom-menu .btn.btn-primary {
         background: #2f89fc;
         border-color: transparent;
@@ -559,15 +567,15 @@ a[data-toggle="collapse"] {
     padding-top: 20px;
     padding-right: 20px;
 }
-
+/*
 .small-box-2 {
     background-color: white;
     margin-left: 10px;
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    /*  margin-bottom: 20px;*/
-}
+   
+}*/
 
 .box-shadow-top:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -2720,6 +2728,12 @@ ________________________________________________
 
 @media (min-width: 480px) and (max-width: 575px) {
 
+        .single-progressbar {
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+
         .circular-progressbar-text {
     margin-top: -90px;
     margin-left: 31px;
@@ -2981,7 +2995,7 @@ ________________________________________________
         width: 250px;
         background-color: white;
         margin-left: 298px;
-        margin-top: -509px;
+        margin-top: -531px;
         padding-left: 20px;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -3338,6 +3352,15 @@ ________________________________________________
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+
+    .small-box-2 {
+    background-color: white;
+    margin-left: 10px;
+    /* margin-right: 20px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
 
     .total-tasks{
         width: 60%; 
@@ -4436,6 +4459,15 @@ ________________________________________________
 }
 @media (min-width: 1201px) and (max-width: 1800px) {
 
+.small-box-2 {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+
         .circular-progressbar-text{
     margin-top: -90px;
     margin-left: 31px;
@@ -4594,6 +4626,15 @@ ________________________________________________
 }
 
 @media (min-width: 1390px) {
+
+.small-box-2 {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
 
         .circular-progressbar-text{
     margin-top: -90px;
